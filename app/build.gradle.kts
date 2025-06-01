@@ -45,9 +45,10 @@ android {
 }
 
 dependencies {
-    implementation(project(":echotrail-core"))
-    implementation("com.squareup.retrofit2:retrofit:2.11.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+//    implementation(project(":echotrail-core"))
+    implementation(libs.echotrail)
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
