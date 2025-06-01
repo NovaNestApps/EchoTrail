@@ -29,6 +29,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
     compileOptions {
@@ -45,8 +46,8 @@ android {
 }
 
 dependencies {
-//    implementation(project(":echotrail-core"))
-    implementation(libs.echotrail)
+    debugImplementation(project(":echotrail-core"))
+    releaseImplementation(libs.echotrail)
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
     implementation(libs.androidx.core.ktx)
