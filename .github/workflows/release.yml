@@ -21,7 +21,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           default_bump: patch
           release_branches: main
-          tag_prefix: v
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
